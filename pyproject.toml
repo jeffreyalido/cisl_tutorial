@@ -4,12 +4,13 @@ version = "0.1.0"
 description = ""
 authors = ["Jeffrey Alido <jalido@bu.edu>"]
 readme = "README.md"
-packages = [{include = "cisl_tutorial", from = "src"}]
+packages = [{include = "src", from = "."}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 torch = "^2.3.0"
 wandb = "^0.16.6"
+torchvision = "^0.18.0"
 
 
 [build-system]

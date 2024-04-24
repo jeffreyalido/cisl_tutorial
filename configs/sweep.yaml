@@ -1,0 +1,18 @@
+program: tests/main.py
+method: random
+metric: 
+  goal: minimize
+  name: validation_loss
+parameters:
+  num_encoder_layers:
+    value: 3
+  num_decoder_layers:
+    value: 3
+  batch_size:
+    value: 32
+  epochs:
+    value: 10
+  lr:
+    value: 0.001
+  T_max:
+    values: [10, 50, 100]
