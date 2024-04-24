@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cisl-tutorial"
+version = "0.1.0"
+description = ""
+authors = ["Jeffrey Alido <jalido@bu.edu>"]
+readme = "README.md"
+packages = [{include = "cisl_tutorial", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.3.0"
+wandb = "^0.16.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
