@@ -15,4 +15,4 @@ parameters:
   lr:
     value: 0.001
   T_max:
-    values: [10, 50, 100]
+    value: 10
