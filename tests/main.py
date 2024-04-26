@@ -11,7 +11,7 @@ import wandb
 def train(model, device, train_loader, optimizer, criterion):
     model.train()
     for _, (data, _) in enumerate(train_loader):
-        data = data.to(device)
+        data = data.to(device) + 0.1 * torch.randn_like(data)  # Adding noise
         optimizer.zero_grad()
         output = model(data)
         loss = criterion(output, data)  # Assuming we want to learn a denoising task

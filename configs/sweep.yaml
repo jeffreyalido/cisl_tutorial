@@ -9,10 +9,11 @@ parameters:
   num_decoder_layers:
     value: 3
   batch_size:
-    value: 32
+    value: 128
   epochs:
     value: 10
   lr:
-    value: 0.001
+    min: 0.000001
+    max: 0.001
   T_max:
     value: 10

@@ -17,7 +17,7 @@ echo "Job ID : \$JOB_ID  \$SGE_TASK_ID"
 echo "=========================================================="
 
 # Specify number of cores 16: a whole node with at least 128gb ram
-#$ -pe omp 2
+#$ -pe omp 1
 
 # Specify number of agents/jobs to deploy
 #$ -t 1-15
